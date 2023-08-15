@@ -1,0 +1,17 @@
+﻿using SignalRStocks.ViewModels;
+using System.Windows;
+
+namespace SignalRStocks
+{
+    /// <summary>
+    /// Interaction logic for MainWindow.xaml
+    /// </summary>
+    public partial class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+            this.DataContext = new MainViewModel();
+        }
+    }
+}
